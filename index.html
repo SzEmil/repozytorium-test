@@ -1,27 +1,69 @@
 <!DOCTYPE html>
+<!-- język stylistyczny dla przeglądarek -->
 <html lang="pl">
   <head>
+    <!-- kod języka znaczków polskich takich jak ł ę itp -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Copyright owner" />
     <title>Test_strona</title>
   </head>
   <body>
+    <div>lista zagniezdzona ul</div>
     <ul>
       <li>
-        MENU
+        Menu1
         <ul>
-          <li><a href="#paragraf2">opcja1</a></li>
-          <li>opcja2</li>
-          <li>opcja3</li>
-          <ul>
-            <li>opcja2_1</li>
-            <li>opcja2_2</li>
-            <!-- ctr+k+c zakomentowuje tekst -->
-          </ul>
+          <li>
+            opcja1
+            <ul>
+              <li><a href="#paragraf2">pod opcja opcji1</a></li>
+            </ul>
+          </li>
+          <li>
+            opcja2
+            <ul>
+              <li>podopcja opcji2</li>
+            </ul>
+          </li>
+        </ul>
+        Menu2
+        <ul>
+          <li>opcja2_1</li>
+          <li>opcja2_2</li>
         </ul>
       </li>
     </ul>
-    <p id="paragraf2">opcja1 dane na ten temat</p>
+    <p id="paragraf2">odnosnik do listy poprzez hasztag</p>
+    <!-- divy to bloki na całą inie a span to linia którą można obok siebie wstawiać -->
+    <div>div zajmuje cały blok czyli całą linie . Div to blok</div>
+
+    <span>znacznik liniowy to span</span>
+    <span>|można go dodawać obok siebie i mamy w jednej linni informacje</span>
+    <!-- p to paragraf to akapit, pojemnik do grupowania elementów, jest to BLOK -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem qui,
+      eveniet eum pariatur et maiores explicabo officiis ullam, consequuntur
+      eius, quibusdam officia quia voluptate tenetur hic fugiat accusantium
+      architecto odit.
+    </p>
+    <div>lista ol</div>
+    <!-- lista lista "ol" mozna nadać type i od czego będzie numerowane -->
+    <ol type="I">
+      <li>opcja1</li>
+      <li>opcja2</li>
+    </ol>
+    <div>"a" jako link do nowej strony</div>
+    <a href="https://www.youtube.com/" target="_blank"
+      >link do strony głównej youtube</a
+    >
+    <div>
+      link do pobrania pliku przegladarka go pobierze a bez dodawania downoald
+      po prostu go wyswietli
+    </div>
+    <a href="files/file1.txt" download target="_blank"
+      >link do pobrania pliku txt</a
+    >
   </body>
 </html>
