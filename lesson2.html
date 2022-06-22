@@ -7,8 +7,8 @@
     <title>Testy_html_css</title>
   </head>
   <body>
-    <a href="index.html" target="_blank" rel="noopener nofollow noreferrer"
-      >Link do strony z informacjami o podstawowych tagach</a
+    <a href="index.html" target="" rel="noopener nofollow noreferrer"
+      >Link do menu</a
     ><br />
     <!-- muzyczka jak chce dodać to jest sztos -->
     <audio controls preload="none">
@@ -16,6 +16,132 @@
         src="https://goit.ua/autocheck/bensound-summer.mp3"
         type="audio/mp3"
       />
+    </audio>
+
+    <!-- warte zapamietania skroty -->
+    <!-- li*5 tworzu 5 list etc-->
+    <!-- <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li> -->
+
+    <!-- TABELE -->
+    <div>Tabela</div>
+    <!-- captionem moge nazwac tabele by boty mogly to odczytać -->
+    <caption>
+      TABELA TEST
+    </caption>
+    <table border="1">
+      <!-- wiersz to tr / th to naglówek (taki porgrobiony)-->
+      <thead>
+        <tr>
+          <th>naglowek1</th>
+          <th>naglowek2</th>
+          <th>naglowek3</th>
+        </tr>
+      </thead>
+      <!-- thead to kontener na naglowki a tbody na wiersze z danymi tabeli -->
+      <tbody>
+        <tr>
+          <!-- td to komórka tabeli / rowspan łączy komórki pionowo a colspan łączy je poziomo-->
+          <td>komórka1</td>
+          <td>komórka2</td>
+          <td rowspan="2">komórka3</td>
+        </tr>
+        <tr>
+          <td>komórka1</td>
+          <td>komórka2</td>
+        </tr>
+        <tr>
+          <td>komórka1</td>
+          <td colspan="2">komórka2</td>
+        </tr>
+      </tbody>
+      <!-- foot to stopka na koniec umeiszczana -->
+      <tfoot>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- dl to lista tych opisów Tekst dt dd pojecie/opis -->
+    <dl>
+      <dt>Minecrat</dt>
+      <dd>taka gierka w kwadraty</dd>
+      <dt>minikraft</dt>
+      <dd>taka gierka w kwadraty co była na telefona kiedyś</dd>
+    </dl>
+    <!-- Span to kontener na krotki tekst by dodać mu klase i modować go -->
+    <span>tekst do wyroznienia w spanie</span>
+
+    <!-- pre układa nasz tekst w taki sposob w jaki jest wklejony tutaj w html on respektuje białe znaki jak enter -->
+    <pre>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Expedita excepturi, quam magnam dolorem
+rerum unde exercitationem perspiciatis animi, fuga deserunt accusantium 
+non ea laborum vel consequuntur enim repellendus pariatur facere.</pre
+    >
+
+    <!-- sub sup sluzą do robienia indeksów np sup da indeksy gorny a sub dolny -->
+    <p>jak obliczyć pole kwadratu: a<sup>2</sup></p>
+    <p>Parametr drugi opisany z indeksem: X<sub>2</sub></p>
+
+    <!-- znaczniki czasowe time  datetime w sumie nic nie daje ale bot może odczytać to albo funkcja z javascriptu może to odczytać bo odczyt daty z tekstu jest trudniejszy niż za pomocą daty liczbowej-->
+    <p><time datetime="2022-06-22">Dziś mamy 21 czerwca 2022</time></p>
+
+    <!-- znacznik adresu kontener do którego wrzucamy dane adresowe jak nasz adres zamieszkania, nr tel czy mail-->
+    <address><a href="mailto:emil-szymczyk3@wp.pl">Mój email</a></address>
+
+    <!-- znacznik strong który pogrubia czcionke, stroong podgreśla boty to odczytają jako zaakcentowanie na jakąś treść/ znacznik b też pogrubia-->
+    <strong>AŁA!! znacznikiem strong</strong><br />
+    <b>AŁA znacznikiem b</b><br />
+
+    <!-- znaczniki em i "i" oba robią to samo -->
+    <i>podkreslenie za pomocą i</i><br />
+    <em>podkreslenie za pomoca em</em><br />
+
+    <!-- znaki specjalne trzeba je brać ze strony specjalnej np dev.w3.org -->
+    <p>kodzik do wyswietlenia centa &cent;</p>
+    <p>kodzik do wysweitlenia copyrights &copy;</p>
+
+    <!-- filmiki multimedia -->
+    <video
+      poster="images/photo1.jpg"
+      width="400"
+      controls
+      autoplay
+      loop
+      preload="metadata"
+    >
+      <source
+        src="https://file-examples.com/storage/fe88505b6162b2538a045ce/2017/04/file_example_MP4_480_1_5MG.mp4"
+        type="video/webm"
+        allowfullscreen
+      />
+      <source
+        src="https://file-examples.com/storage/fe88505b6162b2538a045ce/2017/04/file_example_MP4_480_1_5MG.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="https://file-examples.com/storage/fe88505b6162b2538a045ce/2017/04/file_example_MP4_480_1_5MG.mp4"
+        type="video/ogg"
+        allowfullscreen
+      />
+      Your browser does not support the <code>video</code> element.</video
+    ><br />
+    <p><strong>TUTAJ NAGRANIE AUDIO NIŻEJ</strong></p>
+
+    <!-- Muzyczka dźwięki -->
+    <audio controls autoplay loop preload="metadata">
+      <source
+        src="https://file-examples.com/storage/fe88505b6162b2538a045ce/2017/11/file_example_MP3_700KB.mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support the <code>video</code> element.
     </audio>
   </body>
 </html>
